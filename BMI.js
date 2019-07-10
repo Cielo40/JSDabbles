@@ -1,15 +1,18 @@
-var issacMass, issacHeight, marcusMass, marcusHeight;
+var johnHeight, johnMass, marcusHeight, marcusMass
 
-issacMass = 55;
-issacHeight = 1.78;
+johnHeight = 1.78; //Metres
+johnMass = 78;
 
-marcusMass = 80;
-marcusHeight = 1.95;
+marcusHeight = 1.99;
+marcusMass = 89;
 
+var BMIjohn = johnHeight / (johnMass * johnMass);
+var BMImarcus = marcusHeight / (marcusMass * marcusMass);
 
-var issacBMI = issacMass / (issacHeight * issacHeight);
-var marcusBmi = markMass / (marcusHeight * marcusHeight);
-console.log(issacBMI, marcusBmi)
+console.log(BMIjohn, BMImarcus)
 
-var higher = issacBMI >= markMass;
-console.log("Is issacs BMI higher than marcus " + higher);
+if(BMImarcus > BMIjohn){
+    console.log('Marcus\'s BMI is higher than Johns\'s')
+}else{
+    console.log('John\'s BMI is lower than Marcus\'s')
+}
